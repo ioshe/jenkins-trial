@@ -3,7 +3,6 @@ node {
 
         stage('Build') {
             echo 'Building..'
-            sh "export JOB_NAME ${env.JOB_NAME}"
             echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             sh """
                 echo 'Job Name: ${env.JOB_NAME}'
