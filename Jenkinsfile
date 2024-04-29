@@ -1,5 +1,5 @@
 node {
-    {
+
         stage('Build') {
             echo 'Building..'
             echo '${JOB_NAME}'
@@ -10,5 +10,5 @@ node {
         stage('Deploy') {
             echo 'Deploying....'
         }
-    }
+
 }
