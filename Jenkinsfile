@@ -8,6 +8,9 @@ node {
             sh """
                 echo 'Job Name: ${env.JOB_NAME}'
             """
+            echo "Job Name is ${env.JOB_NAME}"
+            echo "$JOB_NAME"
+            echo "${JOB_NAME}"
             sh '''
                 echo 'asdf ${env.JOB_NAME}'
                 echo "asdf env.JOB_NAME"
