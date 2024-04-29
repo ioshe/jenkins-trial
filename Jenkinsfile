@@ -9,7 +9,7 @@ node {
                 echo 'Job Name: ${env.JOB_NAME}'
             """
             sh '''
-                echo 'asdf \${MY_JOB_NAME}'
+                echo 'asdf \${JOB_NAME}'
                 env
                 #    echo 'Job Name: ${env.JOB_NAME}'
                 # echo '${env.JOB_NAME}' => ${env.JOB_NAME} 문자열 그대로 나옴
