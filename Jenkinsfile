@@ -1,4 +1,5 @@
 node {
+        MY_JOB_NAME = "${env.JOB_NAME}"
 
         stage('Build') {
             echo 'Building..'
@@ -7,7 +8,6 @@ node {
             sh """
                 echo 'Job Name: ${env.JOB_NAME}'
             """
-            
             sh '''
                 echo env
                 #    echo 'Job Name: ${env.JOB_NAME}'
