@@ -12,13 +12,7 @@ node {
             echo "$JOB_NAME"
             echo "${JOB_NAME}"
             sh '''
-                echo 'asdf ${env.JOB_NAME}'
-                echo "asdf env.JOB_NAME"
-                env
-                #    echo 'Job Name: ${env.JOB_NAME}'
-                # echo '${env.JOB_NAME}' => ${env.JOB_NAME} 문자열 그대로 나옴
-                # 안됨 echo "${env.JOB_NAME}"
-                # echo "${env.JOB_NAME}"
+                echo "done" > /var/lib/jenkins/workspace/${JOB_NAME}/asdf.txt
             '''
         }
         stage('Test') {
